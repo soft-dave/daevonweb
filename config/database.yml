@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: viinfo
+  password: viinfo
+  host: localhost
+  pool: 5
+
+development:
+  <<: *default
+  # database: softdevconsultancy_development
+  database: daevonweb_development_latest
+
+production:
+  <<: *default
+  database: daevonweb_production_latest
