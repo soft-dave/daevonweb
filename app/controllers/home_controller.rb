@@ -2,7 +2,6 @@ class HomeController < ApplicationController
 	def index
     @portfolios = Portfolio.all
   	@technologies = Technology.all
-    puts @technologies.inspect
     @testimonials = Testimonial.all
     @contact = Contact.new
     @success = false

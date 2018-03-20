@@ -1210,8 +1210,9 @@ a.button_slider_02:hover {
 	color: #727272;
 }
 
-/* footer social links */
-ul.footer_social_links {
+/*/* footer social links */
+
+/*ul.footer_social_links {
 	float: right;
 	padding: 0px;
 	margin: 0px 0px 0px 0px;
@@ -1234,7 +1235,7 @@ ul.footer_social_links {
 }
 .footer_social_links li i {
 	color: #565656;
-}
+}*/
 
 
 /*------------------*/
@@ -2203,7 +2204,7 @@ ul.post_meta_links_small {
 	width: 90%;
 	margin-top: 10px;
 }
-.comment_submit {
+/*.comment_submit {
 	background-color: #eee;
 	border: 1px solid #ddd;
 	padding: 9px 13px;
@@ -2216,7 +2217,7 @@ ul.post_meta_links_small {
 .comment_submit:hover {
 	background-color: #f9f9f9;
 	cursor: pointer;
-}
+}*/
 
 /* comments */
 .comment_wrap{
@@ -2272,7 +2273,7 @@ ul.post_meta_links_small {
 }
 
 /* contact form */
-.comment_form {
+/*.comment_form {
 	float: left;
 	width: 690px;
 	margin-top: 30px;
@@ -2343,7 +2344,7 @@ ul.post_meta_links_small {
 	border: 5px solid #fff;
 	-webkit-box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 	box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-}
+}*/
 
 
 /* Portfolio Page */

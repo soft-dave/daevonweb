@@ -1,0 +1,35 @@
+<div id="flashMessage" style="display: <%= @success ? 'block' : 'none' %>">
+  <div class="alert-message info">
+    <p>
+      <%= @msg %>
+    </p>
+  </div>
+</div>
+<%= form_for @contact, :url =>  home_index_path, :method => 'post', :remote => true, html: {id: "contact_form", style: "display: #{@success ? 'none' : 'block'}"} do |f| %>
+  <div id="name">
+    <%= f.label :name, class: 'blocklabel' %>
+    <%= f.text_field :name, class: 'input_bg', :placeholder => "Your name" %>
+  </div>
+  <div id="email">
+    <%= f.label :email, class: 'blocklabel' %>
+    <%= f.text_field :email, class: 'input_bg', :placeholder => "Your email" %>
+  </div>
+  <div id="message">
+    <%= f.label :message, class: 'blocklabel' %>
+    <%= f.text_area :message, class: 'textarea_bg', :placeholder => "Type your message here!" %>
+  </div>
+  <div id="submit">
+    <%= f.submit 'Submit', :class => "comment_submit" %>
+  </div>
+<% end %>
+
+<% if @success.present? %>
+  <script>
+    
+    setTimeout(function(){
+      $('#flashMessage').hide();
+      $('#contact_form').show();
+    }, 3000);
+
+  </script>
+<% end %>
