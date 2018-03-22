@@ -89,7 +89,7 @@
 						data-easing="Back.easeInOut"
 						data-endspeed="400"
 						data-endeasing="Back.easeIn"
-						style="z-index: 14">Experience With
+						style="z-index: 14; color: white;">Experience With
 					</div>
 					<div class="tp-caption medium_light_white skewfromright customout"
 						data-x="0"
@@ -101,7 +101,7 @@
 						data-endspeed="300"
 						data-endeasing="Power1.easeIn"
 						data-captionhidden="on"
-						style="z-index: 6"><b>Ruby On Rails</b>
+						style="z-index: 6; color: white;"><b>Ruby On Rails</b>
 					</div>
 					<div class="tp-caption customin ltl"
 						data-x="0"
@@ -112,7 +112,7 @@
 						data-easing="Back.easeInOut"
 						data-endspeed="400"
 						data-endeasing="Back.easeIn"
-						style="z-index: 16">We hope that you enjoy it.
+						style="z-index: 16; color: white;">We hope that you enjoy it.
 					</div>
 					<div class="tp-caption customin ltl"
 						data-x="0"
@@ -178,14 +178,14 @@
         EFFECTIVE
         <strong>Team</strong>
         <br/>
-        <i>Will uncover many web sites still in their infancy passages more recently</i>
+        <i style="color: white;">Will uncover many web sites still in their infancy passages more recently</i>
       </h1>
       <div class="one_fifth">
-        <%= image_tag ('team-1.png') %>
+        <%= image_tag ('team/team-1.png') %>
         <h4>
           Devendra Chauhan
           <br/>
-          <em>- Founder</em>
+          <em style="color: #404040;">- Founder</em>
         </h4>
         <ul class="people_soci">
           <li>
@@ -220,11 +220,11 @@
         <p>13+ years of experience in IT industry.</p>
       </div>
       <div class="one_fifth">
-        <%= image_tag ('team-2.png') %>
+        <%= image_tag ('team/team-2.png') %>
         <h4>
           Bipin Patel
           <br/>
-          <em>- Sr. Ruby On Rails Devloper</em>
+          <em style="color: #404040;">- Sr. Ruby On Rails Devloper</em>
         </h4>
         <ul class="people_soci">
           <li>
@@ -259,11 +259,11 @@
         <p>6+ years of experience in Software & Product Development, key features are challange new technologies.</p>
       </div>     
       <div class="one_fifth">
-        <%= image_tag ('team-3.png') %>
+        <%= image_tag ('team/team-3.png') %>
         <h4>
           Gagan Gami
           <br/>
-          <em>- Jr. Ruby On Rails Devloper</em>
+          <em style="color: #404040;">- Jr. Ruby On Rails Devloper</em>
         </h4>
         <ul class="people_soci">
           <li>
@@ -298,11 +298,11 @@
         <p>3 years of experience in Web Application development. Sound knowledge in Ruby, AngularJS and Bootstrap.</p>
       </div>
       <div class="one_fifth">
-        <%= image_tag ('team-4.jpg') %>
+        <%= image_tag ('team/team-4.jpg') %>
         <h4>
           Ajay Parihar
           <br/>
-          <em>- Jr. Ruby On Rails Devloper</em>
+          <em style="color: #404040;">- Jr. Ruby On Rails Devloper</em>
         </h4>
         <ul class="people_soci">
           <li>
@@ -334,14 +334,14 @@
 
         <div class="clearfix mar_top2"></div>
         
-        <p>1.5 year experience in Web Application & Front-end development with Ruby On Rails, HTML5/CSS3.</p>
+        <p>2 year experience in Web Application & Front-end development with Ruby On Rails, HTML5/CSS3.</p>
       </div>
       <div class="one_fifth last">
-        <%= image_tag ('team-5.png') %>
+        <%= image_tag ('team/team-5.png') %>
         <h4>
           Gyandipsinh Chauhan
           <br/>
-          <em>- Fresher</em>
+          <em style="color: #404040;">- Jr. Ruby On Rails Devloper</em>
         </h4>
         <ul class="people_soci">
           <li>
@@ -564,9 +564,9 @@
         <div class="portfolioContainer">
           <% @portfolios.each do |portfolio| %>
             <div class="<%= portfolio.technologies.map{|p| p.title.gsub(' ', '-')}.join(' ').downcase%>">
-              <a class="fancybox" data-fancybox-group="gallery" href="#{portfolio.cover_photo}" title="#{portfolio.title}">
+              <a class="fancybox" data-fancybox-group="gallery" href="<%= portfolio.cover_photo %>" title="<%= portfolio.title %>">
                 <div class="imgWrap">
-                  <%= image_tag "#{portfolio.cover_photo}" %>
+                  <%= image_tag(portfolio.cover_photo)%>
                   <p class="imgDescription">
                     <i class="fa fa-search fa-4x"></i>
                   </p>
@@ -610,15 +610,11 @@
           </div>
           <div class="clearfix mar_top3"></div>
           <ul class="controlls">
-            <li>
-              <a class="slide1" href="#"></a>
-            </li>
-            <li>
-              <a class="slide2" href="#"></a>
-            </li>
-            <li>
-              <a class="slide3" href="#"></a>
-            </li>
+            <% @testimonials.each_with_index do |x, index| %>
+              <li>
+                <a class="slide<%= index + 1 %>" href="#"></a>
+              </li>
+            <% end %>
           </ul>
         </div>
       </div>
@@ -694,9 +690,10 @@
             </div>
             <div class="one_half last">
               <div class="map">
-                <iframe class="google-map" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.6954374739094!2d72.97737631482836!3d22.553078939370877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4c1d6c6bb9eb%3A0x3cb99aa1f12dfa20!2sSoft+Dev+Consultancy!5e0!3m2!1sen!2sus!4v1478241105127"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.695569789724!2d72.97737631495919!3d22.553073985192846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3cb99aa1f12dfa20!2sDaevon+Web!5e0!3m2!1sen!2sin!4v1513331794219" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
               </div>
             </div>
+            <div class="clearfix mar_top8"></div>
             <ul class="footer_social_links">
               <li>
                 <a href="#">
@@ -740,12 +737,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="copyright_info">
-      Copyright © 2016-2017 SoftDevConsultancy. All rights reserved.
-      <a href="#">Terms of Use</a>
-      |
-      <a href="#">Privacy Policy</a>
     </div>
   </div>
 </div>
@@ -847,6 +838,17 @@
           media : {}
         }
       });
+    });
+  });
+</script>
+<script type="text/javascript">
+  $(window).load(function(){
+    $(".controlls li a").click(function(e) {
+      e.preventDefault();
+      var id = $(this).attr('class');
+      $('#slider div:visible').fadeOut(500, function() {
+        $('div#' + id).fadeIn();
+      })
     });
   });
 </script>

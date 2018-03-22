@@ -24,12 +24,10 @@
 <% end %>
 
 <% if @success.present? %>
-  <script>
-    
+  <script type="text/javascript">
     setTimeout(function(){
       $('#flashMessage').hide();
       $('#contact_form').show();
     }, 3000);
-
   </script>
 <% end %>

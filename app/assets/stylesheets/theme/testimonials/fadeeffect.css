@@ -63,6 +63,12 @@
   margin: 0 auto;
   width: 100%;
 }
+.faide_slider #slide5{
+  float: left;
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+}
 
 
 .faide_slider ul.controlls{

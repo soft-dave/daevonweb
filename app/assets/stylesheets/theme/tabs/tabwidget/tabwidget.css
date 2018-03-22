@@ -51,7 +51,7 @@ ul.tabs li.last {
 ul.tabs li.active, html ul.tabs li.active a,  html ul.tabs li.active a:hover  {
 		background: #fff;
 		color:#363333;
-		border-top: 1px solid #6fbe48;
+		border-top: 1px solid #3b5998;
 }
 	
 .tab_container {
@@ -96,7 +96,7 @@ ul.tags {
 	font-size: 12px;
 }
 .tags li a:hover {
-	background-color: #6fbe48;
+	background-color: #3b5998;
 	color: #fff;
 }
 

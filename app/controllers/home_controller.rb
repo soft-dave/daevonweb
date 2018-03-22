@@ -8,6 +8,19 @@ class HomeController < ApplicationController
     
     # return render :text => @contact.inspect 
   end
+
+  def portfolios
+  end
+
+  def about
+  end
+
+  def team
+  end
+
+  def contact_us
+    @contact = Contact.new
+  end
    
   def create
     @contact = Contact.new(contact_params)
