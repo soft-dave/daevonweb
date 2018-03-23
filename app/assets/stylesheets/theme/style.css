@@ -1274,8 +1274,8 @@ a.button_slider_02:hover {
 	float: left;
 	width: 100%;
 	margin-top: 0px;
-	padding: 28px 0px;
-	background: #97b5bf url(../images/page-titlebg.jpg) repeat-y center top;
+	padding: 22px 0px;
+	background: #3b5998 repeat-y center top;
 }
 .page_title .title {
 	width: 100%;
@@ -4086,7 +4086,7 @@ a.button_slider.two:hover {
 	float: left;
 }
 .joosa.fusection1 .one_fourth i {
-	color: #9a9cb4;
+	color: red;
 	margin-bottom: 30px;
 	background: url(/assets/theme/dashed-circle.png) no-repeat center top;
 	float: left;
