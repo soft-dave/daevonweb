@@ -17,14 +17,16 @@
         <div class="project_title">
             <h2><strong><%= @portfolio.title %></strong>
                 <div class="project_arrow">
-                    <!-- <a href="" title="Previous"><i class="fa fa-chevron-left" aria-hidden="true"></i></a> -->
-                        <%= link_to @portfolio.previous(@portfolio), :title => "Previous"  do %>
-                            <i class="fa fa-chevron-left" aria-hidden="true">
+                    <% if @previous %>
+                        <%= link_to project_path(@previous), :title => "Previous"  do %>
+                            <i class="fa fa-chevron-left"></i>
                         <% end %>
-                    <!-- <a href="" title="Next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a> -->
-                        <%= link_to @portfolio.next(@next), :title => "Next"  do %>
-                            <i class="fa fa-chevron-left" aria-hidden="true">
+                    <% end %>
+                    <% if @next %>
+                        <%= link_to project_path(@next), :title => "Next"  do %>
+                            <i class="fa fa-chevron-right"></i>
                         <% end %>
+                    <% end %>
                 </div>
                 <div class="project_back_box">
                     <!-- <a href="" title="Back to list"><i class="fa fa-th"></i></a> -->
