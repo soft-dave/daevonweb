@@ -1,64 +1,48 @@
-
 <div class="page_title">
-
 	<div class="container">
 		<div class="title"><h1>Single Image</h1></div>
-        <div class="pagenation">&nbsp;<a href="index.html">Home</a> <i>/</i> <a href="#">Portfolio</a> <i>/</i> Single Image</div>
+    <div class="pagenation">&nbsp;<a href="index.html">Home</a> <i>/</i> <a href="#">Portfolio</a> <i>/</i> Single Image</div>
 	</div>
-</div><!-- end page title --> 
-
-
-<!-- Contant
-======================================= -->
+</div>
 
 <div class="container">
-
 	<div class="content_fullwidth">
-        <div class="project_title">
-            <h2><strong><%= @portfolio.title %></strong>
-                <div class="project_arrow">
-                    <% if @previous %>
-                        <%= link_to project_path(@previous), :title => "Previous"  do %>
-                            <i class="fa fa-chevron-left"></i>
-                        <% end %>
-                    <% end %>
-                    <% if @next %>
-                        <%= link_to project_path(@next), :title => "Next"  do %>
-                            <i class="fa fa-chevron-right"></i>
-                        <% end %>
-                    <% end %>
-                </div>
-                <div class="project_back_box">
-                    <!-- <a href="" title="Back to list"><i class="fa fa-th"></i></a> -->
-                    <%= link_to portfolios_home_index_path, :title => "Back to list"  do %>
-                        <i class="fa fa-th"></i>
-                    <% end %>
-                </div>
-            </h2>
+    <div class="project_title">
+      <h2>
+        <strong><%= @portfolio.title %></strong>
+        <div class="project_arrow">
+          <% if @previous %>
+            <%= link_to project_path(@previous), :title => "Previous"  do %>
+              <i class="fa fa-chevron-left"></i>
+            <% end %>
+          <% end %>
+          <% if @next %>
+            <%= link_to project_path(@next), :title => "Next"  do %>
+              <i class="fa fa-chevron-right"></i>
+            <% end %>
+          <% end %>
         </div>
-        <div class="clearfix mar_top3"></div>
+        <div class="project_back_box">
+          <%= link_to projects_path, :title => "Back to list"  do %>
+            <i class="fa fa-th"></i>
+          <% end %>
+        </div>
+      </h2>
+    </div>
+    <div class="clearfix mar_top3"></div>
 		<div class="portfolio_area">
-        	
-            <div class="portfolio_area_left"><%= image_tag(@portfolio.cover_photo) %></div>
-            
-            <div class="portfolio_area_right">
-            
-            	<h3><i>Project Description</i></h3>
-                <p><%= @portfolio.description %></p>
-                
-                <div class="project_details"> 
-                	<h3>Technologies</h3>
-                    <p><%= @portfolio.technologies.map{|p| p.title.gsub(' ', '-')}.join(', ').downcase%></p>
-                    <div class="clearfix mar_top3"></div>
-                    <a href="http://www.repoapp.com/" target="_blank" class="but_goback">Visit Site <i class="fa fa-hand-o-right fa-lg" ></i></a>
-                </div>  
-                
-            </div>
-          
-		</div><!-- end section -->
-
+      <div class="portfolio_area_left"><%= image_tag(@portfolio.cover_photo) %></div>
+      <div class="portfolio_area_right">
+      	<h3><i>Project Description</i></h3>
+          <p><%= @portfolio.description %></p>
+          <div class="project_details"> 
+          	<h3>Technologies</h3>
+            <p><%= @portfolio.technologies.map{|p| p.title.gsub(' ', '-')}.join(', ').downcase%></p>
+            <div class="clearfix mar_top3"></div>
+            <a href="<%= @portfolio.url %>" target="_blank" class="but_goback">Visit Site <i class="fa fa-hand-o-right fa-lg" ></i></a>
+          </div>  
+      </div>
+		</div>
 	</div>
-
-</div><!-- end content area -->
-
+</div>
 <div class="clearfix mar_top5"></div>

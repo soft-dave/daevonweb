@@ -4,7 +4,8 @@
       <div class="wrapper">
         <div class="container">
           <div class="logo_main">
-            <a href="index.html" id="logo"></a>
+            <!-- <a href="index.html" id="logo"></a> -->
+            <%= link_to "Home", root_path, :id => "logo" %>
           </div>
           <div class="menu_main">
             <div class="joosa top_links">
@@ -14,7 +15,7 @@
               <div id="menu" class="menu">
                 <ul id="tiny">
                   <li>
-                    <%= link_to "Home",  root_path %>
+                    <%= link_to "Home", root_path %>
                   </li>  
                   <li>
                     <a href="#">Layouts <i class="fa fa-angle-down"></i></a>
@@ -41,7 +42,7 @@
                   <li><a href="#">Resources <i class="fa fa-angle-down"></i></a>
                     <ul>
                       <li>
-                        <%= link_to "Case Study", portfolios_home_index_path %>
+                        <%= link_to "Case Study", projects_path %>
                       </li>
                       <li><a href="blog-full-width.html">Blog</a></li>   
                     </ul>

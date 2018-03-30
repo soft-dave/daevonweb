@@ -7,11 +7,7 @@ class HomeController < ApplicationController
     @success = false
     
     # return render :text => @contact.inspect 
-  end
-
-  def portfolios
-    @portfolios = Portfolio.all
-  end
+  end 
 
   def about
   end

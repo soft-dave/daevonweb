@@ -7,6 +7,11 @@ class Portfolio < ApplicationRecord
   accepts_nested_attributes_for :technologies
   
   validates :title, presence: true
+  validates :url,
+            presence: true,
+            length: { maximum: 245 },
+            format: { with: URI.regexp(%w(http https)), message: :bad_url_format }
+
   validates :description, presence: true
   has_attached_file :cover_photo, styles: { medium: "300x300>", thumb: "100x100>" }, 
                             :url => "/system/portfolios/:id_partition/:id/:style/:basename.:extension",  

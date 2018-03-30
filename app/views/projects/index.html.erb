@@ -1,0 +1,23 @@
+<div class="page_title">
+  <div class="container">
+    <div class="title"><h1>About Page</h1></div>
+    <div class="pagenation">&nbsp;<a href="index.html">Home</a> <i>/</i> <a href="#">Pages</a> <i>/</i> About Page</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content_fullwidth">
+    <h2>Case <strong>Study</strong></h2>
+    <% @portfolios.each_with_index do |portfolio, index| %>
+      <div class="one_fourth <%= ((index + 1) % 4) == 0 ? 'last' : '' %>">
+        <div class="portfolio_image">
+          <i class="fa fa-search fa-2x"></i>
+          <%= link_to image_tag(portfolio.cover_photo), project_path(portfolio.id) %>
+          <div class="title"><%= portfolio.title %></div>
+        </div>
+      </div>
+    <% end %>
+    <div class="mar_top5"></div>
+  </div>
+</div>
+<div class="clearfix mar_top5"></div>

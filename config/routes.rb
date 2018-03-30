@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 	root 'home#index'
   resources :home do
   	collection do 
-			get '/portfolios' => 'home#portfolios'
+			# get '/portfolios' => 'home#portfolios'
 			get '/about' => 'home#about'
 			get '/team' => 'home#team'
 			get '/contact_us' => 'home#contact_us'

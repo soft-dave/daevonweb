@@ -11,10 +11,11 @@ ActiveAdmin.register Portfolio do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-	permit_params :title, :description, :cover_photo, technology_ids: []
+	permit_params :title, :description, :url, :cover_photo, technology_ids: []
 
 	index do
 		column :title
+		column :url
 		column :description
 		column "Technologies" do |p|
 			p.technologies.map(&:title).join(", ")
@@ -25,7 +26,8 @@ ActiveAdmin.register Portfolio do
 	form do |f|
 		f.inputs "Portfolio Details" do
 		  f.input :title
-		  f.input :description	
+		  f.input :url	
+		  f.input :description
 		  f.file_field :cover_photo
 		end
 
@@ -38,6 +40,7 @@ ActiveAdmin.register Portfolio do
 	show do 
 	  attributes_table do
 	    row :title
+	    row :url
 	    row :description
 	    row :cover_photo do
 	     	image_tag portfolio.cover_photo.url(:medium)
