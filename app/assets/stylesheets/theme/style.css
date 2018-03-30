@@ -1693,7 +1693,7 @@ ul.lirt_section {
 .portfolio_area_left {
 	padding: 0px;
 	margin: 0px;
-	width: 75%;
+	width: 50%;
 	float: left;
 }
 .portfolio_area_left img {
@@ -1707,12 +1707,12 @@ ul.lirt_section {
 .portfolio_area_right {
 	padding: 0px;
 	margin: 0px 0px 0px 3%;
-	width: 22%;
+	width: 45%;
 	float: left;
 }
 .project_details {
 	padding: 0px;
-	margin: 70px 0px 0px 0px;
+	margin: 15px 0px 0px 0px;
 }
 .project_details span {
 	padding: 5px 0px;
@@ -4789,4 +4789,35 @@ ul.footer_social_links {
 	cursor: pointer;
 }
 
+.project_title {
+	width: 100%;
+	text-align: center;
+}
 
+.project_arrow {
+	width: 100%;
+	margin-top: -25px;
+	text-align: right;
+}
+
+.project_arrow a {
+	color: #3b5998;
+}
+
+.project_arrow:hover a {
+	color: #337ab7;
+}
+
+.project_back_box {
+	width: 100%;
+	margin-top: -25px;
+	text-align: left;
+}
+
+.project_back_box a {
+	color: #3b5998;
+}
+
+.project_back_box:hover a {
+	color: #337ab7;
+}

@@ -112,7 +112,23 @@ ul.post_meta_links {
 	margin-top: 5px;
 }
 
-
+.joosa.fusection1 .left {
+	width: 300px;
+	height: 300px;
+	padding: 20px;
+}
+.joosa.fusection1 .center {
+	width: 300px;
+	height: 300px;
+	padding: 20px;
+	margin-left: -15px;
+}
+.joosa.fusection1 .right {
+	width: 300px;
+	height: 300px;
+	padding: 20px;
+	margin-left: -15px;
+}
 
 
 
@@ -177,6 +193,41 @@ a.button_slider_02 {
 }
 .punch_text02 b em {
 	line-height: 22px;
+}
+
+.joosa.fusection1 .one_fourth i {
+	margin-left: 13px;
+}
+
+.joosa.fusection1 .left {
+	width: 230px;
+	height: 252px;
+	padding: 0px 11px;
+}
+.joosa.fusection1 .center {
+	width: 230px;
+	height: 252px;
+	padding: 0px 11px;
+	margin-left: -10px;
+}
+.joosa.fusection1 .right {
+	width: 230px;
+	height: 252px;
+	padding: 0px 11px;
+	margin-left: -10px;
+}
+.joosa.fusection1 h3 {
+	font-size: 18px;
+	margin-top: 13px;
+	margin-bottom: 5px;
+	line-height: 25px;
+}
+.joosa.fusection1 p {
+	font-size: 13px;
+	line-height: 20px;
+}
+.joosa.fusection1 i {
+	font-size: 40px;
 }
 
 .punchline_text_box {
@@ -248,6 +299,15 @@ a.button_slider_02 {
 	top: 80px;
 	left: 100px;
 }
+
+/*.portfolio_page .imgWrap img{
+	width: 300px;
+}
+
+.portfolio_page .imgWrap h3{
+	width: 300px;
+	padding-top: 0 50px;
+}*/
 
 ul.post_meta_links {
 	margin: -10px 0px 0px 14%;
@@ -569,11 +629,36 @@ a.show_hide{
 	margin-bottom: 0 !important;
 }
 
+.joosa.fusection1 .left {
+	margin-left: 20px;
+	margin-top: -23px;
+}
+.joosa.fusection1 .center {
+	width: 300px;
+	height: 300px;
+	padding: 49px;
+	margin-left: 20px;
+	margin-top: -15px;
+}
+.joosa.fusection1 .right {
+	margin-left: 20px;
+	margin-top: -15px;
+}
+
+.joosa.fusection1 .one_fourth {
+	width: 100%;
+	margin-right: 0%;
+}
+
+.joosa.fusection1 .one_fourth i {
+	margin-left: 165px;
+}
+
 #trueHeader #logo{
 	height: 50px;
 	margin-top: 18px;
 	margin-bottom: 8px;
-	background:url(../images/logo.png) no-repeat center top;
+	background:url(/assets/logo.png) no-repeat center top;
 }
 
 .logo_main {
@@ -1083,7 +1168,14 @@ a.show_hide{
 	background-position: left;
 }
 
+.portfolio_page .imgWrap img{
+	width: 300px;
+}
 
+.portfolio_page .imgWrap h3{
+	width: 300px;
+	padding-top: 0 50px;
+}
 
 
 }
@@ -1174,11 +1266,54 @@ a.show_hide{
 	margin-bottom: 0 !important;
 }
 
+.joosa.fusection1 .one_fourth {
+	width: 100%;
+	margin-right: 0%;
+}
+
+.joosa.fusection1 .one_fourth i {
+	margin-left: 90px;
+}
+
+.joosa.fusection1 .left {
+	width: 250px;
+	height: 250px;
+	padding: 20px 20px;
+	margin-top: -30px;
+}
+.joosa.fusection1 .center {
+	width: 250px;
+	height: 250px;
+	padding: 20px 20px;
+	margin-left: 0px;
+	margin-top: -10px;
+}
+.joosa.fusection1 .right {
+	width: 250px;
+	height: 250px;
+	padding: 20px 20px;
+	margin-left: 0px;
+	margin-top: -10px;
+}
+.joosa.fusection1 h3 {
+	font-size: 18px;
+	margin-top: 13px;
+	margin-bottom: 5px;
+	line-height: 25px;
+}
+.joosa.fusection1 p {
+	font-size: 13px;
+	line-height: 20px;
+}
+.joosa.fusection1 i {
+	font-size: 40px;
+}
+
 #trueHeader #logo{
 	height: 50px;
 	margin-top: 18px;
 	margin-bottom: 8px;
-	background:url(../images/logo.png) no-repeat center top;
+	background:url(/assets/logo.png) no-repeat center top;
 }
 
 .logo_main {
@@ -1864,6 +1999,32 @@ a.show_hide{
 
 .joosa.punch_text02 .right_img {
 	background-position: left;
+}
+
+.portfolio_page .imgWrap img{
+	width: 300px;
+}
+
+.portfolio_page .imgWrap h3{
+	width: 300px;
+	padding-top: 0 50px;
+}
+
+.project_title {
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+}
+.project_arrow {
+	margin-top: 10px;
+	width: 100%;
+	text-align: right;
+}
+
+.project_back_box {
+	margin-top: -29px;
+	width: 100%;
+	text-align: left;
 }
 
 }

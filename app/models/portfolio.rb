@@ -13,4 +13,19 @@ class Portfolio < ApplicationRecord
                             :path => ":rails_root/public/system/portfolios/:id_partition/:id/:style/:basename.:extension"
   validates_attachment_content_type :cover_photo, content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"]
 
+  # def previous
+  #   Portfolio.where(["id < ?", id]).last
+  # end
+
+  # def next
+  #   Portfolio.where(["id > ?", id]).first
+  # end
+
+  def self.next(portfolio)
+    where('id < ?', portfolio.id).last
+  end
+
+  def self.previous(portfolio)
+    where('id > ?', portfolio.id).first
+  end
 end

@@ -10,6 +10,7 @@ class HomeController < ApplicationController
   end
 
   def portfolios
+    @portfolios = Portfolio.all
   end
 
   def about
