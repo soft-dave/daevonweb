@@ -263,7 +263,7 @@ a.button_slider_02 {
 	font-size: 18px;
 	text-transform: uppercase;
 	color: #fff;
-	background-color: #6d84b4;
+	background-color: #3b5998;
 	border-radius: 4px;
 }
 a.button_slider_02:hover {
@@ -2719,7 +2719,7 @@ a.but_goback {
 }
 a.but_goback:hover {
 	color: #fff;
-	background-color: #383634;
+	background-color: #337ab7;
 }
 a.but_ok_2 {
 	padding: 10px 22px 10px 22px;
@@ -4820,4 +4820,22 @@ ul.footer_social_links {
 
 .project_back_box:hover a {
 	color: #337ab7;
+}
+
+.tip {
+	background: #ed8446;
+	color: #ffffff;
+}
+
+.tip:before {
+	border-right-color: #ed8446;
+}
+
+.tip-dark {
+	background: #2e353e !important;
+	color: #ffffff !important;
+}
+
+.tip-dark:before {
+	border-right-color: #2e353e !important;
 }

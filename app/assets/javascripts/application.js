@@ -11,7 +11,6 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require turbolinks
 //= require theme/universal/jquery.js
 //= require theme/style-switcher/jquery-1.js
 //= require theme/style-switcher/styleselector.js

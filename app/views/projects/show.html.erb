@@ -39,7 +39,7 @@
           	<h3>Technologies</h3>
             <p><%= @portfolio.technologies.map{|p| p.title.gsub(' ', '-')}.join(', ').downcase%></p>
             <div class="clearfix mar_top3"></div>
-            <a href="<%= @portfolio.url.present? ? @portfolio.url : '#' %>" target="_blank" class="but_goback">Visit Site <i class="fa fa-hand-o-right fa-lg" ></i></a>
+            <a href="<%= @portfolio.url.present? ? @portfolio.url : '/#' %>" target="<%= @portfolio.url.present? ? "_blank" : '' %>" class="but_goback">Visit Site <i class="fa fa-hand-o-right fa-lg" ></i></a>
           </div>  
       </div>
 		</div>
